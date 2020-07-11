@@ -1,7 +1,8 @@
 html,
 body {
     height: 100%;
-    /* background-color: linen;  */
+    /* background-image: url("wall.jpg"); */
+    /* background-color: wheat;  */
     background-color: linen;
     padding: 0px;
     margin: 0px;
@@ -9,7 +10,8 @@ body {
 }
 .head {
     /* background: #000000; */
-    background-color: #4CAF50
+    background-image: url("maxresdefault.jpg");
+    /* background-color: #4CAF50 */
     /* background-color: #4991b4; */
     /* background-color: #2a607c; */
 }
@@ -35,9 +37,10 @@ img {
     margin: 20px;
 }
 .about {
-    background-color: wheat;
+    background-image: url('No-Limits.jpg');
+    /* background-color: wheat; */
     color: #000000;
-    margin-left: 20px;
+    margin: 20 0 0 20;
     max-width: 700px;
 }
 .content {
