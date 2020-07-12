@@ -9,26 +9,36 @@ body {
 h1 {
     font-size: 50px;
     font-weight: 700;
+    padding: 10 0 0 100;
     text-align: center;
 } 
 .head {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
     background-image: url("maxresdefault.jpg");
-
-    /* background-color: #3b90be ; */
 }
-.nav-item {
+.head .nav {
+    justify-content: center;
+    display: flex;
+    margin: 10 10 0 0;
+}
+.nav a {
     color: white;
     font-weight: 700;
-    margin-left: 20px;
-}
-img {
-    width: 200px;
-    height: 200px;
+    display: flex;
+    padding: 20 40;  
 }
 
-.container div {
-   margin-top: 20px;
+
+
+img {
+    width: 400px;
+    height: auto;
+    margin: 5px;
 }
+
+
 
 
 footer {
