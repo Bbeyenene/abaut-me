@@ -1,8 +1,6 @@
 html,
 body {
     height: 100%;
-    /* background-image: url("wall.jpg"); */
-    /* background-color: wheat;  */
     background-color: linen;
     padding: 0px;
     margin: 0px;
@@ -48,7 +46,6 @@ img {
 }
 .about {
     background-image: url('th-1.jpg');
-    /* background-color: wheat; */
     color: #000000;
     margin: 20 0 0 20;
     max-width: 700px;
