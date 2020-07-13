@@ -32,11 +32,11 @@ h1 {
 }
 .container {
     width: 50%;
-    margin: 30 auto;
+    margin: 20 20;
     padding: 20px;
     border-radius: 8px;
     background-image: url('liggt.png');
-    min-width: 600px;
+    border: 1px solid red;
 }
 .form-column {
     width: 100%;    
@@ -73,4 +73,56 @@ footer .footer-bottom {
     bottom: 0px;
     left: 0px;
     padding-top: 8px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .head {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    .head h1{
+        align-self: 40%;
+       padding: 10 0 0 10;
+       margin-right: 20px;
+    }
+    .nav {
+        align-self: flex-end;
+    }
+    .nav a {
+        padding: 20 20;
+    }
+    .container {
+        margin: 0 auto;
+        width: 500px;
+    }
+    footer {
+        position: absolute;
+    }
+}
+@media screen and (max-width:425px) {
+    .head {
+        width: 425;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h1 {
+        padding: 10 0 0 0;
+        font-size: 45px;
+        margin-right: 10px;
+        text-align: center;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+    .container {
+        width: 425px;
+    }
+    footer {
+        /* width: 425px; */
+        position: absolute;
+    }
 }
