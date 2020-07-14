@@ -1,27 +1,29 @@
-html,
-body {
-    height: 100%;
-    background-color: linen;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lora', 'serif';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-h1 {
-    font-size: 50px;
-    font-weight: 700;
-    padding: 10 0 0 100;
-    text-align: center;
-} 
+body {
+    min-height: 100vh;
+    background-color: linen;
+    font-family: 'Lora', 'serif';
+    position: relative;
+    padding-bottom: 55px;
+}
+/* header styling */
 .head {
     text-align: center;
     display: flex;
     justify-content: space-between;
-    background-color: #1E4498;
+    background-color: #1E4498;   
+    flex-direction: column;
 }
 .head .nav {
     justify-content: center;
     display: flex;
-    margin: 10 10 0 0;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
 }
 .nav a {
     color: white;
@@ -30,7 +32,25 @@ h1 {
     padding: 20 40;  
 }
 
-h2 {
+h1 {
+    padding: 10  0 0 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+} 
+h5 {
+    margin-left: 60px;
+}
+p {
+    margin-left: 20px;
+}
+
+.head ul {
+    align-items: flex-end;
+}
+/* body styling */
+
+ h2 {
     text-align: center;
     font-weight: 700;
     color: gold;
@@ -38,29 +58,31 @@ h2 {
     padding: 10px;
 }
 .container {
-    margin: 20 auto;
-    max-width: 1024px;
-    background-image: url('br.jpg');
+    max-width: 1000px;
+    background-image: url('br-2.jpg');
     align-content: center;
     border-radius: 8px;
+    margin-top: 5px;
 }
 .container .row {
     padding: 10px;
 }
 .container .row .col {
+    margin-bottom: 10px;
     justify-content: space-around;
+    flex-direction: column;
 }
 .container .row .col-div {
     margin: 0 auto;
     justify-content: center;
     align-items: flex-end;
-    width: 400px;
     text-align: center;
     border-radius: 8px;
 }
 
 img {
-    max-width: 400px;
+    min-width: 250px;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     border-radius: 8px;
@@ -69,28 +91,28 @@ img {
 .imageLabel {
    
     font-style: italic;
-    background-image: url('m.jpg');  
+    background-image: url('br-3.jpg');  
     color: snow; 
     padding: 20px;
     font-weight: 700; 
     font-size: large;
-}
-
+} 
 
 footer {
+    margin-top: 100px;
     background-color: #303036;
     color: #d3d3d3; 
     text-align: center;
     height: 50px;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     left: 0px;
-
-}
+} 
 
 .footer-content p {
     padding: 10px;
+    font-size: large;
     margin-bottom: 0;
 }
 
@@ -105,58 +127,57 @@ footer .footer-bottom {
     left: 0px;
     padding-top: 8px;
 }
-@media screen and (max-width: 768px) {
+
+
+@media screen and (min-width:425px) {
     .head {
+        background-color: #1E4498;   
+        text-align: center;
+        display: flex;
         justify-content: space-between;
-        flex-direction: column;
-    }
+        flex-direction: row;
+    }  
     .head h1{
         align-self: 40%;
        padding: 10 0 0 10;
        margin-right: 20px;
     }
-    .nav {
+    .head .nav {
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: row;
         align-self: flex-end;
+        align-items: flex-end;
     }
     .nav a {
         padding: 20 20;
     }
-    footer {
-        position: relative;
+}
+@media screen and (min-width:425px) {
+    .head {
+        background-color: #1E4498;   
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+}
+@media screen and (min-width:769px) {
+    .head {
+        background-color: #1E4498;   
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
 }
-
-@media screen and (max-width:425px) {
+@media screen and (min-width:1024px) {
     .head {
-        justify-content: center;
-        flex-direction: column;
-    }
-    h1 {
-        padding: 10 0 0 0;
-        font-size: 45px;
-        margin-right: 10px;
+        background-color: #1E4498;   
         text-align: center;
-    }
-    .nav {
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
-    }
-
-    .container .row .col-div {
-        margin: 0 auto;
-        justify-content: center;
-        align-items: flex-end;
-        width: 320px;
-        text-align: center;
-        border-radius: 8px;
-    }
-    img {
-        width: 320px;
-        height: auto;
-        margin-top: 20px;
-    }
-    footer {
-        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
     }
 }

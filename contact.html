@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="Assets/CSS/contact.css">
 </head>
 <body>
     <header class=" head text-white">
@@ -18,57 +18,29 @@
             </ul>
         </nav>
     </header>
-     <main class="container">  
-        <form action="">
-            <fieldset>
-                <legend>Contact:</legend>
-                <div class="form-column align-items-center ">
-                    <div class="form-group row">
-                        <label for="name" class="col-sm-2 col-form-label"><span>Name</span> </label>
-                        <div class="col-sm-6">
-                        <input type="text" class="form-control" id="name" placeholder="John Dee">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="mail" class="col-sm-2 col-form-label"><span>Email</span>  </label>
-                        <div class="col-sm-6">
-                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="phone" class="col-sm-2 col-form-label"><span>phone</span> </label>
-                        <div class="col-sm-6">
-                        <input type="tel" class="form-control" id="name" placeholder="(773)123-4567">
-                        </div>
-                    </div>
-                    
-                    <!-- <div class="form-group row">
-                        <label for="message" class="col-sm-2 col-form-label"><span>Message</span> </label>
-                        <div class="col-sm-6">
-                            <textarea name="Message" id="Message" cols="45" rows="5" placeholder=" I want to ask ......"></textarea>
-                        </div>
-                    </div>  -->
-                    <div class="form-group row">
-                        <label for="phone" class="col-sm-2 col-form-label"><span>Date</span> </label>
-                        <div class="col-sm-6">
-                            <input  type="date" id="datemin" name="datemin" min="2000-01-02"> 
-                        </div>
-                    </div> 
-                </div>
-                <div style="width: 300px;">
-                    <button type="submit" class="btn btn-success btn-lg btn-block ">Submit</button>
-                </div>  
-            </fieldset> 
-        </form>
-    </main>
-   
     
+    <form class="myForm" action="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="usnername" class="form-control" id="name" placeholder="John Dee">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
     <footer>
         <div class="footer-content">
          <p>bbeyene@githab.io</p> 
         </div>
         <div class="footer-bottom">
-          &copy;Copyright 2020 Berhane Beyene
+          Copyright&copy;2020, Berhane Beyene
         </div>
       </footer>
 </body>
