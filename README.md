@@ -19,3 +19,5 @@ This enables the my web pages to be clearly accessible by any browzer.
  
 # reset 
 The reset is add so that in any divice my web page is pulled, andy existing style wilbe reset to `zero` to fit that device, then my bootstrap and styles will be exicuted.
+
+https://bbeyenene.github.io/abaut-me/index.html
