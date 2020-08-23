@@ -61,15 +61,17 @@ p {
 /* *********************** */
 .link {
     background-color: moccasin;
-    margin: 10px;
+    margin: 5 5 40 5;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: column; */
     text-align: center;
     justify-content: space-around;
 }
 .link a {
     display: flex;
+    flex-wrap: wrap;
     margin: 5px;
 }
 
