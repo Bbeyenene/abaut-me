@@ -6,7 +6,7 @@ It is a web site with my personal information. There are three pages that can be
 
 2. The portfolio page is the location where links to github, linkdin and my resume. Moreover, images of my projects are added and on click to the images will take you to the functional url of the profect.
 
-![Portfolio page demo](Assets/Images/por.png)
+![Portfolio page demo](Assets/Images/port.png)
 
 3. The contact page have my contact information.
 
