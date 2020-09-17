@@ -17,3 +17,6 @@ $('#work-day').on('click', function() {
 $('#quiz').on('click', function() {
     window.open('https://bbeyenene.github.io/Code-Quize/','_blank')
 });
+$('#team').on('click', function() {
+    window.open('https://bbeyenene.github.io/Employee-Information-Template-Engine/output/team.html','_blank')
+});
