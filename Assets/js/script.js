@@ -1,3 +1,11 @@
+$('#habitude').on('click', function() {
+  window.open('https://habitudeapp.herokuapp.com/', '_blank')
+});
+
+$('#note').on('click', function() {
+  window.open('https://infonotebook.herokuapp.com/', '_blank')
+});
+
 $('#burger').on('click', function() {
     window.open('https://burgeryummy.herokuapp.com/burgers', '_blank')
 });
